@@ -2,3 +2,4 @@ node_modules
 package-lock.json
 vendor
 dist
+adiciona readme e remove dist
