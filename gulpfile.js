@@ -5,7 +5,7 @@ const rename = require('gulp-rename')
 const uglify = require('gulp-uglify')
 const image = require('gulp-image')
 
-function tarefasCSS(cb) {
+function tarefasCSS(cb) { 
 
     return gulp.src('./vendor/**/*.css')
         .pipe(concat('libs.css'))
