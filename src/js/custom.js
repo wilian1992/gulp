@@ -17,17 +17,6 @@ $(document).ready(function(){
    $('.featured-item a').addClass('btn btn-dark stretch-link');
    
    $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
-   // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
-   // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
-   // $('.featured-item:first h4').addClass('active')
-   // $('.featured-item:first h4').removeClass('active')
-   // $('.featured-item:first h4').toggleClass('active')
-   // $('.featured-item:first h4').hide()
-   // $('.featured-item:first h4').show()
-   // $('.featured-item:first h4').fadeIn(2000)
-   // $('.featured-item:first h4').fadeOut()
-   //  $('.featured-item:first h4').css('color', '#f00')
-
    
    $('.featured-item h4').dblclick( function(){
       
@@ -69,13 +58,13 @@ $(document).ready(function(){
     */
    const duracao = 1000 // equivalenta a 1 segundo
 
-   $('.featured-item:nth(0)')
-      .hide(duracao)
-      .show(duracao)
-      .fadeOut(duracao)
-      .fadeIn(duracao)
-      .toggle(duracao)
-      .toggle(duracao)
+   // $('.featured-item:nth(0)')
+   //    .hide(duracao)
+   //    .show(duracao)
+   //    .fadeOut(duracao)
+   //    .fadeIn(duracao)
+   //    .toggle(duracao)
+   //    .toggle(duracao)
 
    $('#form-submit').on('click', function(e){
 
