@@ -64,7 +64,7 @@ a {
 #pre-header {
 	background-color: #3a8bcd;
 	text-align: center;
-
+	
 	span {
 		color: #fff;
 		font-size: 15px;
@@ -120,20 +120,25 @@ a {
 }
 .navbar-dark .navbar-toggler-icon {
 	background-image: none;
+	
+	.navbar-toggler {
+		border-color: #3a8bcd;
+		background-color: #3a8bcd;	
+		height: 50px;
+		outline: none;
+	}
+	
+	.navbar-toggler-icon:after {
+		content: '\f0c9';
+		color: #FFF;
+		font-size: 22px;
+		line-height: 30px;
+		font-family: 'FontAwesome';
+	}
+	
 }
-.navbar-dark .navbar-toggler {
-	border-color: #3a8bcd;
-	background-color: #3a8bcd;	
-	height: 50px;
-	outline: none;
-}
-.navbar-dark .navbar-toggler-icon:after {
-	content: '\f0c9';
-	color: #FFF;
-	font-size: 22px;
-	line-height: 30px;
-	font-family: 'FontAwesome';
-}
+
+
 /* Banner Style */
 .banner {
 	margin-top: 50px;
@@ -142,28 +147,36 @@ a {
 	background-repeat: no-repeat;
 	padding: 150px 0px;
 	background-position: center center;
-}
-.banner .caption {
+
+.caption {
 	background-color: rgba(250,250,250,0.9);
 	padding: 30px;
 	max-width: 450px;
 }
-.banner .caption h2 {
+
+.caption h2 {
 	margin-top: 0px;
 	margin-bottom: 15px;
 	font-size: 24px;
 	font-weight: 700;
 	color: #1e1e1e;
 }
-.banner .caption .line-dec {
+.caption .line-dec {
 	width: 30px;
 	height: 5px;
 	background-color: #3a8bcd;
 }
+
 .banner .caption p {
 	margin-top: 15px;
 	margin-bottom: 20px;
 }
+
+}
+
+
+
+
 
 /* Featured Style */
 .featured-items {
