@@ -17,49 +17,62 @@ a {
 	text-transform: uppercase;
 }
 
-.main-button a {
-	background-color: #3a8bcd;
-	border-radius: 5px;
-	padding: 10px 15px;
-	display: inline-block;
-	color: #fff;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 300;
-	letter-spacing: 0.4px;
-	text-decoration: none;
-	transition: all 0.5s;
+.main-button  {
+	
+	a{
+		background-color: #3a8bcd;
+		border-radius: 5px;
+		padding: 10px 15px;
+		display: inline-block;
+		color: #fff;
+		font-size: 14px;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		text-decoration: none;
+		transition: all 0.5s;
+		
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	
 }
-.main-button a:hover {
-	opacity: 0.7;
-}
+
 .section-heading {
 	margin-top: 80px;
 	margin-bottom: 40px;
+	
+	
+	.line-dec {
+		width: 30px;
+		height: 5px;
+		background-color: #3a8bcd;
+	}
+	h1 {
+		font-size: 22px;
+		font-weight: 700;
+		color: #1e1e1e;
+		margin-top: 15px;
+	}
+	
 }
-.section-heading .line-dec {
-	width: 30px;
-	height: 5px;
-	background-color: #3a8bcd;
-}
-.section-heading h1 {
-	font-size: 22px;
-	font-weight: 700;
-	color: #1e1e1e;
-	margin-top: 15px;
-}
+
+
 
 /* Pre Header Style */
 #pre-header {
 	background-color: #3a8bcd;
 	text-align: center;
+
+	span {
+		color: #fff;
+		font-size: 15px;
+		padding: 10px 0px;
+		display: inline-block;
+	}
 }
-#pre-header span {
-	color: #fff;
-	font-size: 15px;
-	padding: 10px 0px;
-	display: inline-block;
-}
+
 
 /* Header Style */
 .navbar .navbar-brand {
@@ -378,27 +391,27 @@ a {
 ------------------------------- */
 .isotope,
 .isotope .item {
-  -webkit-transition-duration: 0.8s;
-     -moz-transition-duration: 0.8s;
-      -ms-transition-duration: 0.8s;
-       -o-transition-duration: 0.8s;
-          transition-duration: 0.8s;
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
 }
 
 .isotope {
-  -webkit-transition-property: height, width;
-     -moz-transition-property: height, width;
-      -ms-transition-property: height, width;
-       -o-transition-property: height, width;
-          transition-property: height, width;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
 }
 
 .isotope .item {
-  -webkit-transition-property: -webkit-transform, opacity;
-     -moz-transition-property:    -moz-transform, opacity;
-      -ms-transition-property:     -ms-transform, opacity;
-       -o-transition-property:         top, left, opacity;
-          transition-property:         transform, opacity;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property:    -moz-transform, opacity;
+	-ms-transition-property:     -ms-transform, opacity;
+	-o-transition-property:         top, left, opacity;
+	transition-property:         transform, opacity;
 }
 
 .page-navigation ul {
@@ -556,7 +569,7 @@ a {
 /* About Us Style */
 .about-page {
 	margin-top: 50px;
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 .about-page .right-content h4 {
 	font-size: 17px;
@@ -604,7 +617,7 @@ a {
 /* Contact Page Style */
 .contact-page {
 	margin-top: 50px;
-    margin-bottom: 80px;
+	margin-bottom: 80px;
 }
 .contact-page .right-content input,
 .contact-page .right-content textarea {
@@ -672,7 +685,7 @@ a {
 
 /* Responsive Style */
 @media (max-width: 991px) {
-
+	
 	.banner {
 		border-top: none;
 		margin-top: 0px;
@@ -684,13 +697,13 @@ a {
 		display: none;
 	}
 	#navbarResponsive {
-	    z-index: 99999;
-	    position: absolute;
-	    top: 96px;
-	    width: 100%;
-	    text-align: center;
-	    background-color: rgba(250,250,250,0.95);
-	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+		z-index: 99999;
+		position: absolute;
+		top: 96px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(250,250,250,0.95);
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
 	}
 	.navbar-dark .navbar-nav .nav-item {
 		border-bottom: 1px solid #eee;
@@ -724,11 +737,11 @@ a {
 	.contact-page {
 		margin-top: 0px;
 	}
-
+	
 }
 
 @media (max-width: 767px) {
-
+	
 	.subscribe-form .main-content form input.button {
 		margin-top: 20px;
 	}
@@ -736,7 +749,7 @@ a {
 		margin-top: 15px;
 		text-align: left;
 	} 
-
+	
 }
 
 ::placeholder {
